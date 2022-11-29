@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <ul style="font-size:larger;">
+        <h1 style="color:Tomato;">1.Describe Python Scope?</h1>
+<p>A variable is only available from inside the region it is created. This is called scope.</p>
+<h3><b>Local Scope</b></h3>
+<li>A variable created inside a function belongs to the local scope of that function, and can only be used inside that function.</li><br></br>
+<li>A variable created inside a function is available inside that function:</li>
+<h4>ex:</h4>
+
+    <p>def myfunc()</p>
+      <p>x = 300</p>
+      <p>print(x)</p>
+    
+    <p>myfunc()</p>
+    <h4>Output:</h4>
+    <p>
+        300</p>
+        <h3><b>Global Scope</b></h3>
+        <li>A variable created in the main body of the Python code is a global variable and belongs to the global scope.</li><br></br>
+
+            <li>Global variables are available from within any scope, global and local.</li><br></br>
+            <li>A variable created outside of a function is global and can be used by anyone:</li>
+            <h4>ex:</h4>
+            <p>x = 300</p>
+            <p>def myfunc():</p>
+            <p>print(x)</p>
+            <p>myfunc()</p>
+            <p>print(x)</p>
+            <h4>Output:</h4>
+            <p>300</p>
+            <p>300</p>
